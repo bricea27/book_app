@@ -11,7 +11,7 @@ var server = http.createServer(function(request, response){
       var data = data.toString();
       response.end(data);
     });
-  }else if (path === "andrew.princesspeach.nyc/dracula"){
+  }else if (path === "/dracula"){
     fs.readFile("dracula.txt", function (err, data1){
       var text = data1.toString();
       var text1 = text.replace(/\n/g, "<br>");
@@ -22,7 +22,7 @@ var server = http.createServer(function(request, response){
       });
     });
   }
-  else if (path === "andrew.princesspeach.nyc/frankenstein"){
+  else if (path === "/frankenstein"){
     fs.readFile("frankenstein.txt", function (err, data1){
       var text = data1.toString();
       var text1 = text.replace(/\n/g, "<br>");
@@ -33,7 +33,7 @@ var server = http.createServer(function(request, response){
       });
     });
   }
-  else if (path === "andrew.princesspeach.nyc/treasureisland"){
+  else if (path === "/treasureisland"){
     fs.readFile("treasureisland.txt", function (err, data1){
       var text = data1.toString();
       var text1 = text.replace(/\n/g, "<br>");
@@ -44,7 +44,7 @@ var server = http.createServer(function(request, response){
       });
     });
   }
-  else if (path === "andrew.princesspeach.nyc/paradiselost"){
+  else if (path === "/paradiselost"){
     fs.readFile("paradiselost.txt", function (err, data1){
       var text = data1.toString();
       var text1 = text.replace(/\n/g, "<br>");
@@ -55,7 +55,7 @@ var server = http.createServer(function(request, response){
       });
     });
   }
-  else if (path === "andrew.princesspeach.nyc/theshining"){
+  else if (path === "/theshining"){
     fs.readFile("theshining.txt", function (err, data1){
       var text = data1.toString();
       var text1 = text.replace(/\n/g, "<br>");
